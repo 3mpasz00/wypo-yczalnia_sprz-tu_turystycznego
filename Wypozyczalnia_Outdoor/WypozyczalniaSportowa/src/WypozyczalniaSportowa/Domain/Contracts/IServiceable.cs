@@ -1,0 +1,1 @@
+namespace WypozyczalniaSportowa.Domain.Contracts; public interface IServiceable { bool NeedsService { get; } void MarkForService(); void CompleteService(); }

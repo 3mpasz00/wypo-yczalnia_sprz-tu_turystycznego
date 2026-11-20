@@ -1,0 +1,39 @@
+@startuml
+abstract class Entity { +Id:int +Clone(deep):Entity }
+abstract class Equipment { -name:string -dailyRate:decimal +CalculateRentalPrice() +Reserve() }
+abstract class SportEquipment { -needsService:bool +MarkForService() }
+class Bicycle
+class Kayak
+class Tent
+class Customer
+class RentalPeriod { +Start:DateOnly +End:DateOnly +Days:int }
+class Rental { -lines:List<RentalLine> +Total:decimal }
+class RentalLine
+class ServiceOrder
+class Inventory<T> { -items:List<T> -byId:Dictionary<int,T> -names:HashSet<string> +Item[id]:T }
+interface IReservable
+interface IServiceable
+interface IPricingStrategy
+class StandardPricingStrategy
+class WeekendPricingStrategy
+class RentalApplicationService
+interface IStoreRepository
+class JsonStoreRepository
+Entity <|-- Equipment
+Equipment <|-- SportEquipment
+SportEquipment <|-- Bicycle
+SportEquipment <|-- Kayak
+SportEquipment <|-- Tent
+Bicycle ..|> IReservable
+Bicycle ..|> IServiceable
+Equipment ..|> IPricingStrategy : consumes
+Rental *-- RentalLine
+Rental --> Customer
+Rental --> RentalPeriod
+Inventory o-- Equipment
+RentalApplicationService --> Inventory
+RentalApplicationService --> IStoreRepository
+StandardPricingStrategy ..|> IPricingStrategy
+WeekendPricingStrategy ..|> IPricingStrategy
+JsonStoreRepository ..|> IStoreRepository
+@enduml

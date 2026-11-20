@@ -1,0 +1,2 @@
+using WypozyczalniaSportowa.Domain;
+namespace WypozyczalniaSportowa.Data; public sealed record RentalSnapshot(int Id, int CustomerId, DateOnly Start, DateOnly End, RentalStatus Status, decimal Total, List<RentalLineSnapshot> Lines);

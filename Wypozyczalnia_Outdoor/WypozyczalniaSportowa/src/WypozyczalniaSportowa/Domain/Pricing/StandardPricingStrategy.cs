@@ -1,0 +1,1 @@
+namespace WypozyczalniaSportowa.Domain.Pricing; public sealed class StandardPricingStrategy : IPricingStrategy { public string Name => "Standardowy"; public decimal Calculate(decimal rate, RentalPeriod p) => rate * p.Days; public override string ToString() => Name; }

@@ -1,0 +1,1 @@
+namespace WypozyczalniaSportowa.Domain; public enum RentalStatus { Active, Returned }

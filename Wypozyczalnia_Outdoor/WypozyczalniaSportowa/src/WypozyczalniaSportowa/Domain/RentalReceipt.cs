@@ -1,0 +1,1 @@
+namespace WypozyczalniaSportowa.Domain; public sealed record RentalReceipt(int RentalId, string Customer, string Period, decimal Total, string Status);

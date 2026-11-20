@@ -1,0 +1,1 @@
+namespace WypozyczalniaSportowa.Domain.Contracts; public interface IReservable { bool IsAvailable { get; } void Reserve(); void Release(); }

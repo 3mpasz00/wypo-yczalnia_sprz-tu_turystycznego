@@ -1,0 +1,3 @@
+using WypozyczalniaSportowa.Domain.Contracts;
+using WypozyczalniaSportowa.Domain.Pricing;
+namespace WypozyczalniaSportowa.Domain; public abstract class SportEquipment : Equipment, IServiceable { private bool _service; protected SportEquipment(string n, decimal r) : base(n, r) { } protected SportEquipment(int id, string n, decimal r, bool a, bool s) : base(id, n, r, a) => _service = s; public bool NeedsService => _service; public void MarkForService() { _service = true; if (IsAvailable) Reserve(); } public void CompleteService() { _service = false; if (!IsAvailable) Release(); } public abstract override decimal CalculateRentalPrice(RentalPeriod p, IPricingStrategy s); }

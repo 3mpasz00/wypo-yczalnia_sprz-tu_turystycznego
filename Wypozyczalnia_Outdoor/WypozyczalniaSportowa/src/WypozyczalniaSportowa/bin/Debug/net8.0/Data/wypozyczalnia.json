@@ -1,0 +1,40 @@
+{
+  "Equipment": [
+    {
+      "Id": 1,
+      "Kind": "Rower",
+      "Name": "Rower trekkingowy",
+      "DailyRate": 65,
+      "IsAvailable": true,
+      "NeedsService": false,
+      "Detail": 21
+    },
+    {
+      "Id": 2,
+      "Kind": "Kajak",
+      "Name": "Kajak dwuosobowy",
+      "DailyRate": 90,
+      "IsAvailable": true,
+      "NeedsService": false,
+      "Detail": 2
+    },
+    {
+      "Id": 3,
+      "Kind": "Namiot",
+      "Name": "Namiot rodzinny",
+      "DailyRate": 50,
+      "IsAvailable": true,
+      "NeedsService": false,
+      "Detail": 4
+    }
+  ],
+  "Customers": [
+    {
+      "Id": 4,
+      "FullName": "Jan Kowalski",
+      "Email": "jan.kowalski@example.com"
+    }
+  ],
+  "Rentals": [],
+  "ServiceOrders": []
+}

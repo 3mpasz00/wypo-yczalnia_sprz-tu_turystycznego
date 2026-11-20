@@ -1,0 +1,25 @@
+@startuml
+left to right direction
+actor Klient
+actor Pracownik
+actor Serwisant
+rectangle "Wypożyczalnia Outdoor" {
+ usecase "Przeglądaj dostępny sprzęt" as Browse
+ usecase "Zarejestruj klienta" as Register
+ usecase "Utwórz rezerwację" as Rent
+ usecase "Nalicz cenę i rabat" as Price
+ usecase "Przyjmij zwrot" as Return
+ usecase "Zleć przegląd sprzętu" as Service
+ usecase "Zamknij zlecenie serwisowe" as Complete
+ usecase "Zapisz/odtwórz dane" as Persist
+}
+Klient --> Browse
+Pracownik --> Browse
+Pracownik --> Register
+Pracownik --> Rent
+Rent .> Price : <<include>>
+Pracownik --> Return
+Pracownik --> Service
+Serwisant --> Complete
+Rent .> Persist : <<include>>
+@enduml

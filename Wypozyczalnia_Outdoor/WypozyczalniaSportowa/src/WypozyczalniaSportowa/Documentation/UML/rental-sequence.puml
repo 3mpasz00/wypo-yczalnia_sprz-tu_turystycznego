@@ -1,0 +1,21 @@
+@startuml
+actor Pracownik
+participant ConsoleMenu
+participant RentalApplicationService
+participant Inventory
+participant IPricingStrategy
+participant JsonStoreRepository
+participant NotificationService
+Pracownik -> ConsoleMenu : wybiera nową rezerwację
+ConsoleMenu -> RentalApplicationService : CreateRental(customer, ids, period, strategy, discount)
+RentalApplicationService -> Inventory : Find(id) i sprawdź dostępność
+Inventory --> RentalApplicationService : Equipment
+RentalApplicationService -> IPricingStrategy : Calculate(rate, period)
+IPricingStrategy --> RentalApplicationService : cena
+RentalApplicationService -> RentalApplicationService : ApplyDiscount(ref total)
+RentalApplicationService -> JsonStoreRepository : Save(StoreSnapshot)
+JsonStoreRepository --> RentalApplicationService : zapisano
+RentalApplicationService -> NotificationService : RentalCreated event
+NotificationService --> Pracownik : wpis do dziennika
+RentalApplicationService --> ConsoleMenu : Rental / RentalReceipt
+@enduml

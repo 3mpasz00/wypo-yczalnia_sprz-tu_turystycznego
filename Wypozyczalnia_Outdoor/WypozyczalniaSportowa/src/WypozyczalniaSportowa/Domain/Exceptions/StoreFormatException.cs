@@ -1,0 +1,1 @@
+namespace WypozyczalniaSportowa.Domain.Exceptions; public sealed class StoreFormatException(string message, Exception inner) : Exception(message, inner) { public override string ToString() => "Błędny format danych: " + Message; }

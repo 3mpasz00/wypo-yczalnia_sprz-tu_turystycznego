@@ -1,0 +1,1 @@
+namespace WypozyczalniaSportowa.Data; public interface IStoreRepository { StoreSnapshot Load(); void Save(StoreSnapshot store); }

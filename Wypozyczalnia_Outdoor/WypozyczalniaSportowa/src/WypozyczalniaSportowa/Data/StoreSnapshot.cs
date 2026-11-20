@@ -1,0 +1,1 @@
+namespace WypozyczalniaSportowa.Data; public sealed record StoreSnapshot(List<EquipmentSnapshot> Equipment, List<CustomerSnapshot> Customers, List<RentalSnapshot> Rentals, List<ServiceOrderSnapshot> ServiceOrders);

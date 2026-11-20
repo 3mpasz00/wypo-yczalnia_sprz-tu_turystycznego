@@ -1,0 +1,4 @@
+using System.Threading;
+namespace WypozyczalniaSportowa.Domain;
+
+public abstract class Entity : IEquatable<Entity> { private static int _lastId, _created; protected Entity() : this(Interlocked.Increment(ref _lastId)) { } protected Entity(int id) { if (id <= 0) throw new Exceptions.DomainValidationException("Id musi być dodatnie."); Id = id; var c = Volatile.Read(ref _lastId); while (c < id) { var old = Interlocked.CompareExchange(ref _lastId, id, c); if (old == c) break; c = old; } Interlocked.Increment(ref _created); } public int Id { get; } public static int CreatedCount => Volatile.Read(ref _created); public bool Equals(Entity? other) => other is not null && GetType() == other.GetType() && Id == other.Id; public override bool Equals(object? o) => o is Entity e && Equals(e); public override int GetHashCode() => HashCode.Combine(GetType(), Id); public abstract Entity Clone(bool deep); public override string ToString() => GetType().Name + " #" + Id; }

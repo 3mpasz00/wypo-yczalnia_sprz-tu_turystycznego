@@ -1,0 +1,1 @@
+namespace WypozyczalniaSportowa.Domain.Contracts; public interface IIdentifiable { int Id { get; } }

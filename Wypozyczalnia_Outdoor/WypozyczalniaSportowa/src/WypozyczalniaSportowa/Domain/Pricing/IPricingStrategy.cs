@@ -1,0 +1,1 @@
+namespace WypozyczalniaSportowa.Domain.Pricing; public interface IPricingStrategy { string Name { get; } decimal Calculate(decimal dailyRate, RentalPeriod period); }

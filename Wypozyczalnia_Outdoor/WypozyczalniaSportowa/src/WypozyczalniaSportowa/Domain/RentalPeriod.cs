@@ -1,0 +1,4 @@
+using WypozyczalniaSportowa.Domain.Exceptions;
+namespace WypozyczalniaSportowa.Domain;
+
+public sealed record RentalPeriod { public RentalPeriod(DateOnly start, DateOnly end) { if (end < start) throw new InvalidRentalPeriodException("Data końca poprzedza początek."); if (end.DayNumber - start.DayNumber > 90) throw new InvalidRentalPeriodException("Maksymalny okres to 91 dni."); Start = start; End = end; } public RentalPeriod(DateOnly start, int days) : this(start, start.AddDays(Math.Max(0, days - 1))) { if (days < 1) throw new InvalidRentalPeriodException("Najem trwa co najmniej dzień."); } public DateOnly Start { get; } public DateOnly End { get; } public int Days => End.DayNumber - Start.DayNumber + 1; public static RentalPeriod operator +(RentalPeriod p, int d) => new(p.Start, p.End.AddDays(d)); public override string ToString() => $"{Start:yyyy-MM-dd} - {End:yyyy-MM-dd} ({Days} dni)"; }

@@ -1,0 +1,1 @@
+namespace WypozyczalniaSportowa.Domain.Exceptions; public sealed class DomainValidationException(string message) : Exception(message) { public override string ToString() => "Niepoprawne dane: " + Message; }

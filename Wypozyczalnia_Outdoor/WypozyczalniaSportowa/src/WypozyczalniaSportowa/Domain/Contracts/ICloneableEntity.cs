@@ -1,0 +1,1 @@
+namespace WypozyczalniaSportowa.Domain.Contracts; public interface ICloneableEntity<out T> { T CloneEntity(bool deep); }

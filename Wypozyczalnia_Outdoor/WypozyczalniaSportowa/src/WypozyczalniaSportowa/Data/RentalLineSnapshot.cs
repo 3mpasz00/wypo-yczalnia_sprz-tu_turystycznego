@@ -1,0 +1,1 @@
+namespace WypozyczalniaSportowa.Data; public sealed record RentalLineSnapshot(int EquipmentId, decimal ChargedPrice);

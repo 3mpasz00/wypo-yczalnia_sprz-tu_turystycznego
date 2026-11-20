@@ -1,0 +1,1 @@
+namespace WypozyczalniaSportowa.Data; public sealed record EquipmentSnapshot(int Id, string Kind, string Name, decimal DailyRate, bool IsAvailable, bool NeedsService, int Detail);

@@ -1,0 +1,1 @@
+namespace WypozyczalniaSportowa.Data; public sealed record CustomerSnapshot(int Id, string FullName, string Email);

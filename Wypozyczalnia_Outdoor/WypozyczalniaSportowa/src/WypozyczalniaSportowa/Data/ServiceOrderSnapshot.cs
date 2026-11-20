@@ -1,0 +1,1 @@
+namespace WypozyczalniaSportowa.Data; public sealed record ServiceOrderSnapshot(int Id, int EquipmentId, string Description, bool IsCompleted);

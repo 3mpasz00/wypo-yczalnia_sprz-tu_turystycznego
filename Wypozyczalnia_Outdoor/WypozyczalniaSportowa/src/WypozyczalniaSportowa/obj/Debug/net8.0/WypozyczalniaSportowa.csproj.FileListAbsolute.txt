@@ -1,0 +1,16 @@
+C:\Users\3mpas\Desktop\Wypozyczalnia_Outdoor\WypozyczalniaSportowa\src\WypozyczalniaSportowa\bin\Debug\net8.0\WypozyczalniaSportowa.exe
+C:\Users\3mpas\Desktop\Wypozyczalnia_Outdoor\WypozyczalniaSportowa\src\WypozyczalniaSportowa\bin\Debug\net8.0\WypozyczalniaSportowa.deps.json
+C:\Users\3mpas\Desktop\Wypozyczalnia_Outdoor\WypozyczalniaSportowa\src\WypozyczalniaSportowa\bin\Debug\net8.0\WypozyczalniaSportowa.runtimeconfig.json
+C:\Users\3mpas\Desktop\Wypozyczalnia_Outdoor\WypozyczalniaSportowa\src\WypozyczalniaSportowa\bin\Debug\net8.0\WypozyczalniaSportowa.runtimeconfig.dev.json
+C:\Users\3mpas\Desktop\Wypozyczalnia_Outdoor\WypozyczalniaSportowa\src\WypozyczalniaSportowa\bin\Debug\net8.0\WypozyczalniaSportowa.dll
+C:\Users\3mpas\Desktop\Wypozyczalnia_Outdoor\WypozyczalniaSportowa\src\WypozyczalniaSportowa\bin\Debug\net8.0\WypozyczalniaSportowa.pdb
+C:\Users\3mpas\Desktop\Wypozyczalnia_Outdoor\WypozyczalniaSportowa\src\WypozyczalniaSportowa\obj\Debug\net8.0\WypozyczalniaSportowa.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\3mpas\Desktop\Wypozyczalnia_Outdoor\WypozyczalniaSportowa\src\WypozyczalniaSportowa\obj\Debug\net8.0\WypozyczalniaSportowa.AssemblyInfoInputs.cache
+C:\Users\3mpas\Desktop\Wypozyczalnia_Outdoor\WypozyczalniaSportowa\src\WypozyczalniaSportowa\obj\Debug\net8.0\WypozyczalniaSportowa.AssemblyInfo.cs
+C:\Users\3mpas\Desktop\Wypozyczalnia_Outdoor\WypozyczalniaSportowa\src\WypozyczalniaSportowa\obj\Debug\net8.0\WypozyczalniaSportowa.csproj.CoreCompileInputs.cache
+C:\Users\3mpas\Desktop\Wypozyczalnia_Outdoor\WypozyczalniaSportowa\src\WypozyczalniaSportowa\obj\Debug\net8.0\WypozyczalniaSportowa.dll
+C:\Users\3mpas\Desktop\Wypozyczalnia_Outdoor\WypozyczalniaSportowa\src\WypozyczalniaSportowa\obj\Debug\net8.0\refint\WypozyczalniaSportowa.dll
+C:\Users\3mpas\Desktop\Wypozyczalnia_Outdoor\WypozyczalniaSportowa\src\WypozyczalniaSportowa\obj\Debug\net8.0\WypozyczalniaSportowa.pdb
+C:\Users\3mpas\Desktop\Wypozyczalnia_Outdoor\WypozyczalniaSportowa\src\WypozyczalniaSportowa\obj\Debug\net8.0\WypozyczalniaSportowa.genruntimeconfig.cache
+C:\Users\3mpas\Desktop\Wypozyczalnia_Outdoor\WypozyczalniaSportowa\src\WypozyczalniaSportowa\obj\Debug\net8.0\ref\WypozyczalniaSportowa.dll
+C:\Users\3mpas\Desktop\Wypozyczalnia_Outdoor\WypozyczalniaSportowa\src\WypozyczalniaSportowa\obj\Debug\net8.0\Wypozycz.9195FC26.Up2Date

@@ -1,0 +1,1 @@
+namespace WypozyczalniaSportowa.Domain.Exceptions; public sealed class InvalidRentalPeriodException(string message) : Exception(message) { public override string ToString() => "Niepoprawny okres: " + Message; }

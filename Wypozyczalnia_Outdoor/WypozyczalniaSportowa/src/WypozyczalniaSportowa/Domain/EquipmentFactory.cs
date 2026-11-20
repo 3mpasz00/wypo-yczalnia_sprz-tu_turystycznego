@@ -1,0 +1,4 @@
+using WypozyczalniaSportowa.Domain.Exceptions;
+namespace WypozyczalniaSportowa.Domain;
+
+public static class EquipmentFactory { public static Equipment Create(string kind, string name, decimal rate, int detail) => kind.Trim().ToLowerInvariant() switch { "rower" => new Bicycle(name, rate, detail), "kajak" => new Kayak(name, rate, detail), "namiot" => new Tent(name, rate, detail), _ => throw new DomainValidationException("Typ: rower, kajak lub namiot.") }; public static Equipment Restore(int id, string kind, string name, decimal rate, bool available, bool service, int detail) => kind switch { "Rower" => new Bicycle(id, name, rate, available, service, detail), "Kajak" => new Kayak(id, name, rate, available, service, detail), "Namiot" => new Tent(id, name, rate, available, service, detail), _ => throw new DomainValidationException("Nieznany typ w pliku: " + kind) }; }

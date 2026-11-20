@@ -1,0 +1,1 @@
+namespace WypozyczalniaSportowa.Domain.Exceptions; public sealed class EquipmentUnavailableException(int id) : Exception($"Sprzęt #{id} jest niedostępny.") { public int EquipmentId { get; } = id; public override string ToString() => Message; }

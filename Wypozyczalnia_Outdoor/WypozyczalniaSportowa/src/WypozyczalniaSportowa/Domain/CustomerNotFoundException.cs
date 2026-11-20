@@ -1,0 +1,1 @@
+namespace WypozyczalniaSportowa.Domain; public sealed class CustomerNotFoundException(int id) : Exception($"Nie znaleziono klienta #{id}.") { public int CustomerId { get; } = id; public override string ToString() => Message; }
